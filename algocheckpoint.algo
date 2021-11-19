@@ -1,0 +1,47 @@
+
+ALGORITHM sentence
+VAR
+  v:INTEGER:=0;
+  w:INTEGER:=1;
+  c:INTEGER:=1;
+  x:CHAR;
+  
+
+BEGIN 
+    read(x)
+    WHILE (x <>".") DO
+
+         c:=c+1;
+        IF (x=" ") THEN
+             w:=w+1;
+        END_IF 
+       
+       IF 
+       
+  ( x= "a" OR x = "e" OR x = "i" OR x = "o" OR x = "u" OR x = "y" OR  x = "A" 
+  OR x = "E" OR x = "I" OR x = "O" OR x = "U" OR x = "Y")
+   THEN
+           v:=v+1;
+       END_IF
+
+     END_WHILE
+    
+     write("there are",w,"words and",c,"characters and",v,"vowles")
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
